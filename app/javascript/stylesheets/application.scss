@@ -1,0 +1,19 @@
+@import "bootstrap";
+
+.container {
+  min-height: 89vh;
+}
+
+.cart-product {
+  min-height: 500px;
+}
+
+.product {
+  img {
+    max-height: 50vh;
+  }
+
+  .title {
+    color: red;
+  }
+}
