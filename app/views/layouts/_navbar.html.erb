@@ -11,8 +11,19 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Navbar text with an inline element
+        <span id="cart" onclick="show_cart()">Кошик</span>
       </span>
+
+
     </div>
   </div>
 </nav>
+<div class="modal fade" id="cart_modal" tabindex="-1" aria-labelledby="cart_modalLabel" aria-hidden="true">
+  <div class="modal-content">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-body row" id="cart_body">
+
+      </div>
+    </div>
+  </div>
+</div>

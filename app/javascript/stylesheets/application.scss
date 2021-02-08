@@ -17,3 +17,11 @@
     color: red;
   }
 }
+
+#cart {
+  &:hover {
+    color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+}
