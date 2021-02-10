@@ -2,7 +2,6 @@
 
 class Cart::ProductComponent < ViewComponent::Base
   def initialize(product:)
-    @product = product
+    @cart_product = product
   end
-
 end

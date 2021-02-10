@@ -9,7 +9,7 @@
         <%= @product.name%>
       </h1>
       <p><%= @product.description%></p>
-      <div class="btn btn-danger">
+      <div class="btn btn-danger" onclick="add_to_cart(<%=@product.id%>)">
         Add to cart
       </div>
     </div>
