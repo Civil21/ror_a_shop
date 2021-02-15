@@ -2,6 +2,10 @@ import Rails from "@rails/ujs"
 import * as bootstrap from 'bootstrap'
 import toastr from "toastr";
 
+toastr.options = {
+  "positionClass": "toast-top-center",
+}
+
   export function add_to_cart(product_id) {
     Rails.ajax({
       type: "POST",

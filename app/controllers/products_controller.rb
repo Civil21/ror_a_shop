@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all.with_attached_image
+    search
   end
 
   def show

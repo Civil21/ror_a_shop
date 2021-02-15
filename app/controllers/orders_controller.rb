@@ -9,11 +9,22 @@ class OrdersController < ApplicationController
         price: cart_product.product.price
       )
     end
+
+    @novaposhta_city = %w[Ужгород Київ]
   end
 
   def create
     @order = Order.create(order_params)
     if @order.save
+      current_cart.cart_products.delete_all
+      text = "Нове замовлення №#{@order.id}\n
+      " + @order.order_products.map do |order_product|
+            "* #{order_product.product.name} \n
+        | Ціна за одиницю: #{order_product.price} \n
+        | кількість: #{order_product.count}
+        "
+          end.join(" \n")
+      Telegram::SendMessageJob.perform_later(text)
       redirect_to root_path
     else
       respond_to do |format|

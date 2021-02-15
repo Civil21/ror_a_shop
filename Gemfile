@@ -31,6 +31,10 @@ gem 'view_component', require: 'view_component/engine'
 
 gem 'simple_form'
 
+gem 'telegram-bot-ruby'
+
+# gem 'novaposhta'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
