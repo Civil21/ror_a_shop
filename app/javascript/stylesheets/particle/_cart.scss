@@ -1,0 +1,12 @@
+#cart {
+  -webkit-box-shadow: 3px 4px 10px rgba(#000000, 0.25);
+  -moz-box-shadow: 3px 4px 10px rgba(#000000, 0.25);
+  box-shadow: 3px 4px 10px rgba(#000000, 0.25);
+  font-size: $text;
+  border-radius: 5px;
+  border-style: none;
+
+  &:hover {
+    font-size: $big-text;
+  }
+}

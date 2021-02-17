@@ -1,0 +1,45 @@
+@import "params";
+
+* {
+  scroll-behavior: smooth;
+  font-family: $font;
+  font-size: 16px;
+
+  a {
+    @include transition;
+
+    color: $btext;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+
+  &::selection {
+    background: rgba($primary-color, 0.18);
+  }
+
+  &::-moz-selection {
+    background: rgba($primary-color, 0.18);
+  }
+}
+
+//
+// .wht{
+//   color: $wtext;
+// }
+//
+// .blt{
+//   color: $btext;
+// }
+//
+// .grey{
+//   color: $accent-color;
+// }
+//
+// body{
+//   max-width: 1920px;
+//   margin: auto;
+// }

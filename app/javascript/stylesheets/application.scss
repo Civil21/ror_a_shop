@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import "toastr";
 
+// @import "animate.css";
+@import "variable/base";
+@import "particle/all";
+
 .container {
   min-height: 89vh;
 }
@@ -19,10 +23,10 @@
   }
 }
 
-#cart {
-  &:hover {
-    color: white;
-    border: 1px solid blue;
-    cursor: pointer;
-  }
-}
+// #cart {
+//   &:hover {
+//     color: white;
+//     border: 1px solid blue;
+//     cursor: pointer;
+//   }
+// }

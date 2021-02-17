@@ -19,12 +19,14 @@ import {
   add_to_cart,
   remove_from_cart,
   show_cart,
-  cart_product_change_count
+  cart_product_change_count,
+  check_blank_cart
 } from "./cart"
 window.add_to_cart = add_to_cart
 window.show_cart = show_cart
 window.remove_from_cart = remove_from_cart
 window.cart_product_change_count = cart_product_change_count
+window.check_blank_cart = check_blank_cart
 
 function delyvery_type_change(value) {
   console.log(value);
